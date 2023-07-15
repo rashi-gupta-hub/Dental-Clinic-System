@@ -30,11 +30,13 @@ app.use(require("express-session")({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-var mongoDB = 'mongodb://127.0.0.1/path-system';
+//var mongoDB = 'mongodb://127.0.0.1/path-system';
+var mongoDB='mongodb+srv://Rashigupta:Rashi123@cluster0.zrpu3ec.mongodb.net/dental_clinic?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 var appointmentSchema = new Schema({
