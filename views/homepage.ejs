@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+     <style>
+    #turnblue:hover{
+  color: #318CE7;
+  text-decoration-color: #318CE7;
+  transition: 1s;
+}
+#bookAppo:hover{
+  color: #318CE7 !important;
+  transform: scale(1.05);
+}
+.turngreen:hover{
+  border-color: #318CE7;
+  border-radius: 10% !important;
+  overflow: hidden;
+  transform: scale(1.05);
+  
+  transition: 1s;
+}
+#logistimg:hover{
+transform: scale(1.2);
+}
+.turngreen2:hover{
+  transform: scale(1.05);
+  border-color: #318CE7;
+  border-radius: 5% !important;
+  overflow: hidden;
+  
+  transition: 1s;
+}
+.turngreen3:hover{
+  border-color: #318CE7;
+  border-radius: 30% !important;
+  overflow: hidden;
+  
+  transition: 1s;
+}
+.turngreen4:hover{
+  border-color: #318CE7;
+ 
+  overflow: hidden;
+  
+}
+.carousel {
+    border-radius: 55px 55px 55px 55px;
+    overflow: hidden;
+}
+        body{
+    background-color: #e9ecef;
+  }
+ 
+#sliderBackground{
+    /* background-color: skyblue; */
+ background-color: #63a4ff;
+background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);;
+    border: solid black 2px;
+    width:100%;
+    height:400px;
+}
+.carousel-control-next{
+  width: 5% !important;
+  opacity: 0;
+}
+.carousel-control-prev{
+  width: 5% !important;
+  opacity: 0;
+}
+     </style>
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <a class="navbar-brand" id="turnblue" href="/">Dental Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto">
+                
+                <a class="nav-link d-flex" href="/login">LOGIN</a>
+                <a class="nav-link d-flex" href="/loginDoctor">LOGIN AS DOCTOR</a>
+                <a class="nav-link d-flex" href="/register">REGISTER</a>
+                <a class="nav-link d-flex" style="color: #318CE7; transition: 1s;" id="bookAppo" href="/userHome">BOOK APPOINTMENT</a>
+ 
+              </div>
+             
+            </div>
+            
+          </div>
+      </nav>
+      
+     <!-- code for carousel -->
+    <div id="sliderBackground">
+      <div style="height: 35px;"></div>
+  <div style="width: 57%; height: 80%;  margin: auto;  border-radius: 55px 55px 55px 55px; border: white solid 2px;">
+    <div style="width: 100% !important; height: 100% !important;"> 
+      <div style="width: 100% !important; height: 100% !important;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div style="width: 100% !important; height: 100% !important;" class="carousel-inner">
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item active" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="3.jpg" class="d-block w-100" alt="...">
+          </div>
+        
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div style="width: 100% !important; height: 100% !important;" class="carousel-item" data-bs-interval="2000">
+            <img style="width: 100%; height: 100%;" src="6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div></div>
+  </div>
+    </div>
+    
+    <div class="container rounded-3" style="box-shadow: 0 0px 30px 0 rgba(55, 56, 154, 0.681); margin-top: 80px;  background-color: white; border-width: 3px; border-color: gray; border-style: solid;">
+      <h2 style="width: 100%; text-align: center; margin-top: 40px;">Book Home Service</h2>
+      <div  class="row" style=" background-color:white; padding-top: 30px;">
+        <div class="col">
+          <div style="width: 100%;">
+          <div style="margin-left: 50%;"><i style="font-size:48px;" class="material-icons">hourglass_top</i></div>
+           
+          <h4 style="margin-bottom: 40px;" class="text-center">Convenient And Timesaving</h4>
+          </div>
+        </div>
+        <div class="col">
+          <div style="width: 100%;">
+            <div style="margin-left: 50%;"><i style="font-size:48px;" style="margin: auto;" class="material-icons">apartment</i></div>
+            <h4 class="text-center">Free Home Cancellation</h4>
+            </div>
+     
+        </div>
+        <div class="col">
+          <div style="width: 100%;">
+            <div style="margin-left: 50%;"><i style="font-size:48px;" style="margin: auto;" class="material-icons">dvr</i></div>
+            <h4 class="text-center">Online Booking Facility</h4>
+            </div>
+      
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container" style="margin-top: 60px;">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card rounded-3 turngreen" style="box-shadow: 0 0px 30px 0 rgba(55, 56, 154, 0.681);">
+            <img src="family.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Preventive Package</h5>
+              <p class="card-text">In our preventive package we provide complete testing and support to our patients. <a href='/preventive'>Read more>></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-3 turngreen" style="box-shadow: 0 0px 30px 0 rgba(55, 56, 154, 0.681);">
+            <img src="elderly.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Elderly Package</h5>
+              <p class="card-text">In our elderly package we provide complete home support to our old patients.<a href='/elderly'>Read more>></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-3 turngreen" style="box-shadow: 0 0px 30px 0 rgba(55, 56, 154, 0.681);">
+            <img src="young.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cosmetic Package</h5>
+              <p class="card-text">In our this package we provide our patients the best possible care for their teeths.<a href='/cosmetic'>Read more>></a></p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+<div class="container" style="margin-top: 60px;"> <h1>Health Packages</h1> <hr>
+
+  <div style="margin-top:40px;" class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Screen</h5>
+          <p class="card-text">This is an entry level oral fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Basic</h5>
+          <p class="card-text">This is a basic level oral fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Advance</h5>
+          <p class="card-text">This is an advance level oral fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen2" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <div class="card-body">
+          <h5 class="card-title">Swasth Fit Complete</h5>
+          <p class="card-text">This is complete oral fitness package. <a href='/swasth'>Read more>></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+
+<div style="margin-top: 60px;" class="container"> <h1>Serving Happy Smile</h1> <hr>
+
+  <div style="margin-top: 40px;" class="row row-cols-1 row-cols-md-6 g-4">
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);" id="alphaHover">
+        <img src="dentalimplant.jpg" style="height: 215px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dental Implants</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <img src="root.jpg" style="height: 215px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Root Canal</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <img src="whitening.jpg" style="height: 215px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Teeth Whitening</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <img src="extraction.jpg" style="height: 215px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Teeth Extraction</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <img src="braces.jpg" style="height: 215px;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Braces & Aligners</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 rounded-3 turngreen" style="box-shadow: 0 0px 10px 0 rgba(55, 56, 154, 0.681);">
+        <img src="cosmetic.jpg" style="height: 215px !important;" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Cosmetic Dentistry</h5>
+    </div>
+      </div>
+    </div>
+  </div>
+   
+</div>
+
+
+
+
+
+<div style="margin-top: 60px;" class="container"> <h1>World Class Infrastructure</h1> <hr>
+<div style="width: 70%;  margin-left: auto; margin-right: auto; margin-top: 40px; margin-bottom: 80 px;"> <img style="width: 100%; margin-bottom: 60px; border-radius: 25px; overflow: hidden; border: 2px black solid; transition: 1s;" id="logistimg" src="infra.jpg"></div>
+</div>
+
+<div style="margin-top: 60px;" class="container"> <h1>Reviews</h1> <hr>
+  <div style="width: 70%; border-radius: 20px ; margin-bottom: 60px; border: 2px solid black; overflow: hidden;  margin-left: auto; margin-right: auto; margin-top: 40px; margin-bottom: 80 px;  background-color: #63a4ff;background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%); text-align: center;"> 
+  <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias deserunt suscipit laudantium delectus laborum accusamus dolorum quibusdam ratione ex. Magni commodi deserunt adipisci neque sapiente quod accusantium, delectus quasi ducimus? -->
+  
+  
+
+
+  <div style="width: 100% !important; height: 100% !important;" id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+    <div style="width: 100% !important; height: 100% !important;" class="carousel-inner">
+      <% for(var j=0; j < data.length; j++) { %>
+
+        
+        <% if(j==0){ %>
+          <div style="width: 100% !important; height: 100% !important; margin-top: 100px; margin-bottom: 100px; text-align: center;" class="carousel-item active" data-bs-interval="2000">
+            <h5>" <%= data[j].review %> "</h5>
+            <div>NAME:- &nbsp;&nbsp; <%= data[j].name%></div> 
+          </div>
+        <% } else{ %>  
+          <div style="width: 100% !important; height: 100% !important; margin-top: 100px; margin-bottom: 100px; text-align: center;" class="carousel-item" data-bs-interval="2000">
+            <h5>" <%= data[j].review %> "</h5>
+            <div>NAME:- &nbsp;&nbsp; <%= data[j].name%></div> 
+          </div>
+       <% } %>
+     
+        <% } %>
+     
+   
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  
+
+
+
+  <button id="addReview" style="margin-top:10px; margin-bottom: 10px;" class="btn btn-success">ADD REVIEW</button>
+<div style="display: none; width: 70%; margin: 10px auto;" id="formId">
+  <form action="/review" method="POST">
+    <input class="form-control" style="margin-top:10px; margin-bottom: 10px;" type="text" name="name" placeholder="NAME" required>
+  <textarea class="form-control" style="margin-top:10px; margin-bottom: 10px;" name="review" placeholder="REVIEW" required></textarea>
+  <button class="btn btn-success" style="margin-top:10px; margin-bottom: 10px;" id="submitButton">submit</button>
+  </form> </div>
+</div>
+  </div>
+  
+
+    <!-- Footer start -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+   
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+    
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+           facebook
+          </a>
+          <a href="" class="me-4 text-reset">
+            twitter
+          </a>
+          <a href="" class="me-4 text-reset">
+          google
+          </a>
+          <a href="" class="me-4 text-reset">
+            instagram
+          </a>
+          <a href="" class="me-4 text-reset">
+           linkedin
+          </a>
+          <a href="" class="me-4 text-reset">
+          github
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Dental Clinic
+              </h6>
+              <p>
+               We at our clinic provide our patients the best experience and most reliable reports. We keep our machines updated and error free with regular maintenance
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="/swasth" class="text-reset">SwasthFit</a>
+              </p>
+              <p>
+                <a href="/preventive" class="text-reset">Preventive Package</a>
+              </p>
+              <p>
+                <a href="/elderly" class="text-reset">Elderly Package</a>
+              </p>
+              <p>
+                <a href="/cosmetic" class="text-reset">Cosmetic Package</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="/login" class="text-reset">Login</a>
+              </p>
+            
+              <p>
+                <a href="/register" class="text-reset">Register</a>
+              </p>
+              <p>
+                <a href="/userHome" class="text-reset">Book Appointment</a>
+              </p>
+              <p>
+                <a href="" class="text-reset">Help</a>
+              </p>
+            </div>
+         
+    
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+               
+              <h6 class="text-uppercase fw-bold mb-4">
+               &nbsp;&nbsp; Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> India, Mathura 208012, UP</p>
+              <p>
+                
+                <i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">email</i> DentalClinic@gmail.com
+              </p>
+              <p><i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">support_agent</i>+ 01 234 567 88</p>
+              <p><i style="font-size:18px; display: inline; vertical-align: middle;" class="material-icons">support_agent</i>+ 01 234 567 89</p>
+            </div>
+            
+          </div>
+          
+        </div>
+      </section>
+     
+    </footer>
+<!-- footer end -->
+ 
+<script>
+  const targetDiv = document.getElementById("formId");
+const btn = document.getElementById("addReview");
+const btn2=document.getElementById("submitButton");
+ 
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+btn2.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+</script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+</html>
