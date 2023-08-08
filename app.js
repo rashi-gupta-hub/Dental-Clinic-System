@@ -81,7 +81,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
+//Home page route
 app.get('/', (req, res) => {
     Review.find({}, function(err, data) {
         if (err) {
@@ -131,6 +131,7 @@ app.post('/loginDoctor', function(req, res) {
         }
     })
 })
+
 // doctor is closing the appointment
 app.delete('/appointmentclose/:id', function(req, res) {
     const recievedId = req.params.id;
