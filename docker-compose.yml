@@ -3,4 +3,4 @@ services :
   web :
      image : rashi1999/dental_clinic:latest
      ports :
-         - "3000:3000"
+         - "3005:3005"
