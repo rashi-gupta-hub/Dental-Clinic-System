@@ -1,4 +1,6 @@
-var express = require("express"),
+var express = require("express");
+const morgan = require('morgan');
+
     mongoose = require("mongoose"),
     passport = require("passport"),
     bodyParser = require("body-parser"),
@@ -6,6 +8,7 @@ var express = require("express"),
     passportLocalMongoose =
     require("passport-local-mongoose");
 var app = express();
+app.use(morgan('combined'));
 const path = require('path')
 const session = require('express-session');
 const flash = require('connect-flash');
@@ -943,6 +946,6 @@ function isLoggedIn(req, res, next) {
 
 
 
-app.listen(3000, () => {
+app.listen(3005, () => {
     console.log("server started......");
 });
